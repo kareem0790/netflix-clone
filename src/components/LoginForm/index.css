@@ -1,0 +1,105 @@
+.app-container {
+  background-color: #131313;
+  height: 100vh;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    height: 100vh;
+    background-image: url('https://res.cloudinary.com/drgslpoho/image/upload/v1690391257/ja9sj0d9acm93lzvkfwj.jpg');
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo-image {
+  width: 100px;
+  height: 27px;
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .logo-image {
+    width: 180px;
+    height: 52px;
+  }
+}
+.login-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .login-container {
+    opacity: 0.8;
+    width: 456px;
+    border-radius: 8px;
+    height: 440px;
+    padding: 30px;
+    background-color: #0c0b10;
+  }
+}
+.login-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .login-heading {
+    text-align: center;
+  }
+}
+.input-container {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.username {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #e2e8f0;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .username {
+    width: 100%;
+  }
+}
+.error-msg {
+  color: #dc2626;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+.button {
+  color: #f8fafc;
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding-top: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
