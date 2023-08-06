@@ -1,0 +1,81 @@
+.trending-heading {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .trending-heading {
+    font-size: 24px;
+  }
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .loader-container {
+    height: 200px;
+  }
+}
+
+.trending-failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  background-color: #0d0d0d;
+  border-radius: 8px;
+}
+
+.failure-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .trending-failure-container {
+    height: 200px;
+    min-width: 1109px;
+  }
+}
+
+.failure-img {
+  width: 24px;
+  height: 24px;
+  background-color: #0d0d0d;
+  color: #0d0d0d;
+}
+@media screen and (min-width: 768px) {
+  .failure-img {
+    width: 48px;
+    height: 48px;
+  }
+}
+.failure-msg {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .failure-img {
+    font-size: 18px;
+  }
+}
+.try-again-btn {
+  font-family: 'Roboto';
+  font-size: 14px;
+  outline: none;
+  border-radius: 8px;
+  color: #171f46;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px 8px 16px;
+}

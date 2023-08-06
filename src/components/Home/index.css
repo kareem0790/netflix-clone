@@ -1,0 +1,136 @@
+.home-main-container {
+  min-height: 100vh;
+  background-color: #181818;
+  padding-bottom: 60px;
+}
+.poster-container {
+  width: 100%;
+  min-height: 350px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 64px;
+  color: #ffffff;
+  margin: 0px;
+  font-weight: 600;
+}
+.overview {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #ffffff;
+}
+.poster-content {
+  width: 296px;
+}
+@media screen and (min-width: 768px) {
+  .poster-content {
+    width: 436px;
+  }
+}
+.play-btn {
+  background-color: #ffffff;
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 16px 8px 16px;
+}
+.trending-container {
+  height: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .trending-container {
+    height: 200px;
+  }
+}
+.original-container {
+  margin-top: 50px;
+}
+.failure-container {
+  background-color: #0d0d0d;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 213px;
+  width: 90%;
+  margin: auto;
+  padding-top: 80px;
+}
+@media screen and (min-width: 768px) {
+  .failure-container {
+    height: 466px;
+    min-width: 1109px;
+  }
+}
+.loader {
+  padding-top: 90px;
+}
+.loader-container {
+  background-color: #0d0d0d;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .loader-container {
+    height: 200px;
+    min-width: 1109px;
+  }
+}
+.failure-img {
+  width: 24px;
+  height: 24px;
+  background-color: #0d0d0d;
+  color: #0d0d0d;
+}
+@media screen and (min-width: 768px) {
+  .failure-img {
+    width: 48px;
+    height: 48px;
+  }
+}
+.failure-msg {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .failure-img {
+    font-size: 18px;
+  }
+}
+.try-again-btn {
+  font-family: 'Roboto';
+  font-size: 14px;
+  outline: none;
+  border-radius: 8px;
+  color: #171f46;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px 8px 16px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

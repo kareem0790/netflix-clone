@@ -60,7 +60,7 @@ class LoginForm extends Component {
       <div className="app-container">
         <img
           src="https://res.cloudinary.com/drgslpoho/image/upload/v1690393145/hewbfzdvblmx4dfgyjow.png"
-          alt="website logo"
+          alt="login website logo"
           className="logo-image"
         />
 

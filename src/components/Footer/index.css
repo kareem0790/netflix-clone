@@ -1,0 +1,30 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logos-container {
+  display: flex;
+  align-items: center;
+}
+.button {
+  background: transparent;
+  padding: 0px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin-right: 20px;
+  }
+}
+.contact-us {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .contact-us {
+    font-size: 16px;
+  }
+}

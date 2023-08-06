@@ -1,0 +1,14 @@
+.trending-img {
+  height: 170px;
+  width: 95%;
+  border-radius: 6px;
+}
+@media screen and (max-width: 767px) {
+  .trending-img {
+    width: 95%;
+    height: 90px;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
