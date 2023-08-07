@@ -83,7 +83,7 @@ class PopularMovies extends Component {
       <div className="failure-sub-container">
         <img
           src="https://res.cloudinary.com/drgslpoho/image/upload/f_auto,q_auto/qbgzcahbb4anevncyvj3"
-          alt="failure logo"
+          alt="failure view"
           className="failure-img"
         />
         <p className="failure-msg">Something went wrong, Please try again</p>

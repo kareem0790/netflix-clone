@@ -4,11 +4,11 @@ import './index.css'
 
 const TrendingItem = props => {
   const {trendingDetails} = props
-  const {backdropPath, title, id} = trendingDetails
+  const {posterPath, title, id} = trendingDetails
 
   return (
     <Link to={`/movies/${id}`}>
-      <img src={backdropPath} alt={title} className="trending-img" />
+      <img src={posterPath} alt={title} className="trending-img" />
     </Link>
   )
 }

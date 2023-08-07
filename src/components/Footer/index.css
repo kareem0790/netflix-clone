@@ -7,13 +7,16 @@
   display: flex;
   align-items: center;
 }
-.button {
+.footer-icon-button {
   background: transparent;
   padding: 0px;
   margin-right: 10px;
+  border: none;
+  outline: none;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .button {
+  .footer-icon-button {
     margin-right: 20px;
   }
 }

@@ -1,8 +1,6 @@
 .list-item {
   list-style-type: none;
-  width: 30%;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  width: 100%;
 }
 
 .popular-image {
@@ -14,7 +12,8 @@
     width: 100%;
   }
 }
-.link {
+.popular-link {
   text-decoration: none;
   margin-right: 10px;
+  width: 29%;
 }

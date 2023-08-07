@@ -25,11 +25,16 @@ class Header extends Component {
     onChangeSearchInput(event)
   }
 
+  onClickSearch = () => {
+    const {onClickSearchIcon} = this.props
+    onClickSearchIcon()
+  }
+
   render() {
     const {showMenu} = this.state
     const item = this.props
     const {search} = item
-    console.log(search)
+
     return (
       <nav className="nav-container">
         <div className="container">
@@ -37,7 +42,7 @@ class Header extends Component {
             <Link to="/" className="nav-link">
               <img
                 src="https://res.cloudinary.com/drgslpoho/image/upload/v1690393145/hewbfzdvblmx4dfgyjow.png"
-                alt="login website logo"
+                alt="website logo"
                 className="logo-image"
               />
             </Link>
@@ -59,12 +64,21 @@ class Header extends Component {
                   placeholder="Search"
                   onChange={this.onChangeInput}
                 />
-                <button type="button" className="search-icon-button">
+                <button
+                  testid="searchButton"
+                  type="button"
+                  onClick={this.onClickSearch}
+                  className="search-icon-button"
+                >
                   <HiOutlineSearch size={25} color="#ffffff" />
                 </button>
               </div>
             ) : (
-              <button type="button" className="search-button">
+              <button
+                type="button"
+                testid="searchButton"
+                className="search-button"
+              >
                 <Link className="nav-link" to="/search">
                   <AiOutlineSearch size={30} color="#ffffff" />
                 </Link>
@@ -81,7 +95,7 @@ class Header extends Component {
               <Link to="/account" className="nav-link">
                 <img
                   src="https://res.cloudinary.com/drgslpoho/image/upload/v1690428675/pygpuvg6zwwaz350kfdg.jpg"
-                  alt="avatar"
+                  alt="profile"
                   className="avatar-image"
                 />
               </Link>

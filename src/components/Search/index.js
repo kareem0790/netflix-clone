@@ -44,11 +44,11 @@ class Search extends Component {
     }
     const response = await fetch(apiUrl, options)
     const data = await response.json()
+    console.log(data)
     if (response.ok === true) {
       const updatedData = data.results.map(each => ({
         backdropPath: each.backdrop_path,
         id: each.id,
-        overview: each.overview,
         posterPath: each.poster_path,
         title: each.title,
       }))
@@ -62,14 +62,32 @@ class Search extends Component {
   }
 
   renderSuccess = () => {
-    const {searchResults} = this.state
+    const {searchResults, searchInput} = this.state
+    const lengthOfSearchResults = searchResults.length
 
     return (
-      <ul className="list-container">
-        {searchResults.map(eachItem => (
-          <PopularItem key={eachItem.id} popularDetails={eachItem} />
-        ))}
-      </ul>
+      <>
+        {lengthOfSearchResults === 0 ? (
+          <div className="no-search-results-container">
+            <div className="no-search-results-sub-container">
+              <img
+                src="https://res.cloudinary.com/drgslpoho/image/upload/v1691298934/nxxnwvcj2wo3lzo4mpm0.svg"
+                alt="no movies"
+                className="no-results-img"
+              />
+              <p className="no-results-content">
+                Your search for {searchInput} did not find any matches.
+              </p>
+            </div>
+          </div>
+        ) : (
+          <ul className="list-container">
+            {searchResults.map(eachItem => (
+              <PopularItem key={eachItem.id} popularDetails={eachItem} />
+            ))}
+          </ul>
+        )}
+      </>
     )
   }
 
@@ -87,8 +105,8 @@ class Search extends Component {
     <div className="popular-failure-container">
       <div className="failure-sub-container">
         <img
-          src="https://res.cloudinary.com/drgslpoho/image/upload/f_auto,q_auto/qbgzcahbb4anevncyvj3"
-          alt="failure logo"
+          src="https://res.cloudinary.com/drgslpoho/image/upload/v1691298132/q8kkybswfzcqnmhu92kh.jpg"
+          alt="failure view"
           className="failure-img"
         />
         <p className="failure-msg">Something went wrong, Please try again</p>
@@ -118,11 +136,19 @@ class Search extends Component {
     this.setState({searchInput: event.target.value})
   }
 
+  onClickSearchIcon = () => {
+    this.getSearchApi()
+  }
+
   render() {
     const path = this.getPath()
     return (
       <div className="search-route-container">
-        <Header search={path} onChangeSearchInput={this.onChangeSearchInput} />
+        <Header
+          search={path}
+          onChangeSearchInput={this.onChangeSearchInput}
+          onClickSearchIcon={this.onClickSearchIcon}
+        />
         {this.getRenderResults()}
       </div>
     )

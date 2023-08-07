@@ -6,6 +6,7 @@ import Header from '../Header'
 import Trending from '../Trending'
 import Originals from '../Originals'
 import Footer from '../Footer'
+import TopRated from '../TopRated'
 
 import './index.css'
 
@@ -92,7 +93,7 @@ class Home extends Component {
       <div className="failure-container">
         <img
           src="https://res.cloudinary.com/drgslpoho/image/upload/f_auto,q_auto/qbgzcahbb4anevncyvj3"
-          alt="failure logo"
+          alt="failure view"
           className="failure-img"
         />
         <p className="failure-msg">Something went wrong, Please try again</p>
@@ -139,6 +140,9 @@ class Home extends Component {
         </div>
         <div className="original-container">
           <Originals />
+        </div>
+        <div className="original-container">
+          <TopRated />
         </div>
         <div className="footer">
           <Footer />

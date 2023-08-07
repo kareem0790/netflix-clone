@@ -14,20 +14,20 @@ const initialConstants = {
   loading: 'LOADING',
 }
 
-class Trending extends Component {
+class TopRated extends Component {
   state = {
     status: initialConstants.initial,
-    trendingList: [],
+    originalsList: [],
   }
 
   componentDidMount() {
-    this.getTrendingApi()
+    this.getOriginalsApi()
   }
 
-  getTrendingApi = async () => {
+  getOriginalsApi = async () => {
     this.setState({status: initialConstants.loading})
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = 'https://apis.ccbp.in/movies-app/trending-movies'
+    const apiUrl = 'https://apis.ccbp.in/movies-app/top-rated-movies'
     const options = {
       method: 'GET',
       headers: {
@@ -36,6 +36,7 @@ class Trending extends Component {
     }
     const response = await fetch(apiUrl, options)
     const data = await response.json()
+    console.log(data)
     if (response.ok === true) {
       const updatedData = data.results.map(each => ({
         backdropPath: each.backdrop_path,
@@ -46,7 +47,7 @@ class Trending extends Component {
       }))
       this.setState({
         status: initialConstants.success,
-        trendingList: updatedData,
+        originalsList: updatedData,
       })
     } else {
       this.setState({status: initialConstants.failure})
@@ -54,7 +55,7 @@ class Trending extends Component {
   }
 
   renderSuccess = () => {
-    const {trendingList} = this.state
+    const {originalsList} = this.state
     const settings = {
       infinite: true,
       speed: 500,
@@ -63,7 +64,7 @@ class Trending extends Component {
     }
     return (
       <Slider {...settings}>
-        {trendingList.map(eachItem => (
+        {originalsList.map(eachItem => (
           <TrendingItem key={eachItem.id} trendingDetails={eachItem} />
         ))}
       </Slider>
@@ -77,7 +78,7 @@ class Trending extends Component {
   )
 
   tryagainPosterView = () => {
-    this.getTrendingApi()
+    this.getOriginalsApi()
   }
 
   renderFailure = () => (
@@ -117,12 +118,12 @@ class Trending extends Component {
 
   render() {
     return (
-      <>
-        <h1 className="trending-heading">Trending Now</h1>
+      <div className="trending-container">
+        <h1 className="trending-heading">Top Rated</h1>
         {this.getRenderResults()}
-      </>
+      </div>
     )
   }
 }
 
-export default Trending
+export default TopRated

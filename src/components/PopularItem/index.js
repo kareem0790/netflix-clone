@@ -4,14 +4,14 @@ import './index.css'
 
 const PopularItem = props => {
   const {popularDetails} = props
-  const {backdropPath, title, id} = popularDetails
+  const {posterPath, title, id} = popularDetails
 
   return (
-    <li className="list-item">
-      <Link to={`/movies/${id}`} className="link">
-        <img src={backdropPath} alt={title} className="popular-image" />
-      </Link>
-    </li>
+    <Link to={`/movies/${id}`} className="popular-link">
+      <li className="list-item">
+        <img src={posterPath} alt={title} className="popular-image" />
+      </li>
+    </Link>
   )
 }
 

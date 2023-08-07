@@ -1,0 +1,49 @@
+.not-found-container {
+  background-image: url('https://res.cloudinary.com/drgslpoho/image/upload/v1691335884/jatlahigkmddsvorfuaa.svg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.not-found-heading {
+  font-family: 'Roboto';
+  font-size: 40px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .not-found-heading {
+    font-size: 96px;
+  }
+}
+.not-found-content {
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px;
+}
+@media screen and (min-width: 768px) {
+  .not-found-content {
+    font-size: 24px;
+  }
+}
+.go-to-home-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px 10px 18px;
+  color: #171f46;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .go-to-home-button {
+    font-size: 18px;
+  }
+}

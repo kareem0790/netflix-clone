@@ -1,0 +1,240 @@
+.movie-item-details-container {
+  min-height: 100vh;
+  background-color: #131313;
+}
+.movie-item-details-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+}
+.movie-item-poster-container {
+  width: 280px;
+  height: ;
+}
+@media screen and (min-width: 768px) {
+  .movie-item-poster-container {
+    width: 400px;
+  }
+}
+.movie-item-title {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .movie-item-title {
+    font-size: 28px;
+  }
+}
+.runtime-container {
+  display: flex;
+  align-items: center;
+}
+.runtime {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .runtime {
+    font-size: 18px;
+  }
+}
+.adult {
+  font-family: 'Roboto';
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .adult {
+    font-size: 18px;
+  }
+}
+.release-year {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .release-year {
+    font-size: 18px;
+  }
+}
+.movie-item-details-overview {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 10px;
+
+  padding: 0px;
+}
+@media screen and (min-width: 768px) {
+  .movie-item-details-overview {
+    font-size: 18px;
+  }
+}
+.play-button {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #171f46;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.movie-content-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+
+.movie-item-details-list-container {
+  padding-left: 0px;
+}
+@media screen and (max-width: 767px) {
+  .movie-item-details-list-container {
+    margin-right: 20px;
+  }
+}
+.movie-item-details-genre-list-item {
+  list-style-type: none;
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.genre {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .genre {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .movie-item-details-genre-list-item {
+    font-size: 16px;
+  }
+}
+.rating-container {
+  display: flex;
+  flex-direction: column;
+}
+.rating-count-heading {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0px;
+
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .rating-count-heading {
+    font-size: 18px;
+  }
+}
+.rating-count {
+  font-size: 12px;
+  margin: 0px;
+
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .rating-count {
+    font-size: 16px;
+  }
+}
+.rating-average {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 400;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .rating-average {
+    font-size: 18px;
+  }
+}
+.rating-average-count {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .rating-average-count {
+    font-size: 16px;
+  }
+}
+.budget-container {
+  display: flex;
+  flex-direction: column;
+}
+.budget-heading {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 400;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .budget-heading {
+    font-size: 18px;
+  }
+}
+.budget-count {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .budget-count {
+    font-size: 16px;
+  }
+}
+.more-like-this-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
+}
+.more-like-this-heading {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .more-like-this-heading {
+    font-size: 24px;
+  }
+}
+.more-like-movies-list-container {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 15px;
+}
